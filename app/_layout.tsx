@@ -1,7 +1,10 @@
-import { Stack } from "expo-router";
+import { Stack } from 'expo-router';
 
 export default function RootLayout() {
-  return <Stack screenOptions={{
-    headerTitle: "Home - Translatboot", // Titre spécifique à la page d'accueil
-  }}/>;
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" options={{ title: 'Home - TranslatBot' }} />
+      <Stack.Screen name="ChatScreen" options={{ title: 'Chat - TranslatBot' }} />
+    </Stack>
+  );
 }

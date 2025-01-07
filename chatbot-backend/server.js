@@ -21,7 +21,7 @@ app.post('/api/translate', async (req, res) => {
   }
 
   // URL de votre service de traduction (exemple ici)
-  const apiUrl = 'https://d918-105-76-169-233.ngrok-free.app/TranslateService/api/translate'; // Remplacer par l'URL de votre API de traduction
+  const apiUrl = 'https://61fc-105-76-169-49.ngrok-free.app/TranslateService/api/translate'; // Remplacer par l'URL de votre API de traduction
   
   try {
     const response = await axios.post(apiUrl, {
